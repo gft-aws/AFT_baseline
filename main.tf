@@ -20,6 +20,6 @@ module "lambda" {
 
 module "eventbridge" {
   source = "./module/eventbridge"
-  Lambdaname = module.lambda.lambda_function_name
+  LambdaName = module.lambda.lambda_function_name
   LambdaARN = module.lambda.lambda_function_arn
 }
