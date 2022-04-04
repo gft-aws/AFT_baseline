@@ -44,7 +44,7 @@ resource "aws_lambda_function" "lambda_sso" {
 filename = "lambda_code.zip"
 function_name = "lambda_sso_permissions"
 role = aws_iam_role.iam_lambda_sso.arn
-handler = "python.lambda_handler"
+handler = "lambda_sso_permissions.lambda_handler"
 
 
 
