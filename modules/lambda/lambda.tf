@@ -9,7 +9,7 @@ type = "zip"
 
 
 
-source_file = "${path.module}/lambda_code/lambda_sso_permissions.py"
+source_file = "${path.module}/lambda_sso_permissions.py"
 output_path = "lambda_code.zip"
 }
 
