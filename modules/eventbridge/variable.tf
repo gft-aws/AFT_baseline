@@ -1,0 +1,7 @@
+variable "LambdaName" {
+
+}
+
+variable "LambdaARN" {
+  
+}
