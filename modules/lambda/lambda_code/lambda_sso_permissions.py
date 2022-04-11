@@ -3,7 +3,7 @@ import boto3
 def lambda_handler(event, context):
     # Calling group and permission set from perameter store
     client = boto3.client('ssm')
-    resp = client.get_parameter( Name = 'sso_list')
+    resp = client.get_parameter( Name = 'AFT_lambda_SSO_list')
     list_group_and_permission_set = resp['Parameter']['Value']
     # Converting StringList into list
     list_group_and_permission_set = list_group_and_permission_set.split(",")
