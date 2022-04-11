@@ -9,7 +9,7 @@
                 "ssm:List*"
             ],
             "Resource": [
-                "arn:aws:ssm:us-east-1:308710073022:*"
+                "arn:aws:ssm:${data_aws_region_current_name}:${data_aws_caller_identity_current_account_id}:*"
             ]
         },
         {
