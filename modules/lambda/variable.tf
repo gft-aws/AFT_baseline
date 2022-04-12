@@ -8,5 +8,5 @@ variable "aws_region" {
 variable ssm_value {
     type = string
     description = "Stringlist of group names and corresponding permissions names in an AFT created account"
-    default = "SSO:DataEngineer,SSO:AdministratorAccess,SSO:PowerUserAccess,DataEngineer:DataEngineer,DataEngineer:AdministratorAccess,test-mk:AdministratorAccess,test-mk:PowerUserAccess"
+    default = "SSO:AdministratorAccess,DataEngineer:DataEngineer"
 }
