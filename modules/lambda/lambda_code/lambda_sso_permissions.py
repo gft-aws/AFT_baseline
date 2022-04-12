@@ -75,4 +75,4 @@ def lambda_handler(event, context):
             )
         #print('event:', json.dumps(event))
     else:
-        print("account creation was not successful, groups and corresponding permmision set not created")
+        print("account creation was not successful, groups and corresponding permision set not created")
