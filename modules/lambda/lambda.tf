@@ -42,5 +42,10 @@ resource "aws_lambda_function" "lambda_sso" {
   handler       = "lambda_sso_permissions.lambda_handler"
   runtime          = "python3.9"
   source_code_hash = filebase64sha256("lambda_code.zip")
+}
 
+resource "aws_ssm_parameter" "AFT_lambda_ssm" {
+  name  = "AFT_lambda_SSO_list"
+  type  = "StringList"
+  value = var.ssm_value
 }
