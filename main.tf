@@ -11,3 +11,15 @@ module "aft" {
   ct_home_region              = "us-east-1"
   tf_backend_secondary_region = "us-west-2"
 }
+
+  
+module "lambda" {
+  source = "./module/lambda"
+  aws_region = "us-east-1"
+}
+
+module "eventbridge" {
+  source = "./module/eventbridge"
+  LambdaName = module.lambda.lambda_function_name
+  LambdaARN = module.lambda.lambda_function_arn
+}
