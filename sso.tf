@@ -1,4 +1,4 @@
-provider "aws" {
+/*provider "aws" {
   alias  = "aft_netops"
   region = "us-east-1"
 }
@@ -120,5 +120,5 @@ resource "aws_ssoadmin_managed_policy_attachment" "SystemAdministrator-attachmen
   managed_policy_arn = "arn:aws:iam::aws:policy/job-function/SystemAdministrator"
   permission_set_arn = aws_ssoadmin_permission_set.SystemAdministrator.arn
 }
-
+*/
 
